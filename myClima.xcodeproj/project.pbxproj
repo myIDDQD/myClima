@@ -13,8 +13,6 @@
 		900C2472289BB9C9008636C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900C2470289BB9C9008636C5 /* Main.storyboard */; };
 		900C2474289BB9CB008636C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900C2473289BB9CB008636C5 /* Assets.xcassets */; };
 		900C2477289BB9CB008636C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900C2475289BB9CB008636C5 /* LaunchScreen.storyboard */; };
-		900C2483289BBA67008636C5 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 900C2481289BBA67008636C5 /* dark_background.pdf */; };
-		900C2484289BBA67008636C5 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 900C2482289BBA67008636C5 /* light_background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		900C2473289BB9CB008636C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		900C2476289BB9CB008636C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900C2478289BB9CB008636C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		900C2481289BBA67008636C5 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
-		900C2482289BBA67008636C5 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +63,6 @@
 				900C2480289BBA01008636C5 /* Controller */,
 				900C2473289BB9CB008636C5 /* Assets.xcassets */,
 				900C2478289BB9CB008636C5 /* Info.plist */,
-				900C2481289BBA67008636C5 /* dark_background.pdf */,
-				900C2482289BBA67008636C5 /* light_background.pdf */,
 			);
 			path = myClima;
 			sourceTree = "<group>";
@@ -155,8 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900C2484289BBA67008636C5 /* light_background.pdf in Resources */,
-				900C2483289BBA67008636C5 /* dark_background.pdf in Resources */,
 				900C2477289BB9CB008636C5 /* LaunchScreen.storyboard in Resources */,
 				900C2474289BB9CB008636C5 /* Assets.xcassets in Resources */,
 				900C2472289BB9C9008636C5 /* Main.storyboard in Resources */,
