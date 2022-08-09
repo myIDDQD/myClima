@@ -14,6 +14,7 @@
 		900C2474289BB9CB008636C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900C2473289BB9CB008636C5 /* Assets.xcassets */; };
 		900C2477289BB9CB008636C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900C2475289BB9CB008636C5 /* LaunchScreen.storyboard */; };
 		908E074A28A188BA0096E93E /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E074928A188BA0096E93E /* WeatherManager.swift */; };
+		90AC640028A265A000DCA75A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AC63FF28A265A000DCA75A /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		900C2476289BB9CB008636C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900C2478289BB9CB008636C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		908E074928A188BA0096E93E /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		90AC63FF28A265A000DCA75A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				908E074928A188BA0096E93E /* WeatherManager.swift */,
+				90AC63FF28A265A000DCA75A /* WeatherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				900C246F289BB9C9008636C5 /* WeatherViewController.swift in Sources */,
+				90AC640028A265A000DCA75A /* WeatherData.swift in Sources */,
 				900C246B289BB9C9008636C5 /* AppDelegate.swift in Sources */,
 				908E074A28A188BA0096E93E /* WeatherManager.swift in Sources */,
 				900C246D289BB9C9008636C5 /* SceneDelegate.swift in Sources */,
