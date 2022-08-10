@@ -25,16 +25,21 @@ struct WeatherManager {
                 }
                 
                 if let safeData = data {
-                    self.parseJSON(weather: safeData)
+                    self.parseJSON(weatherData: safeData)
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(weather: Data) {
+    func parseJSON(weatherData: Data) {
         let decoder = JSONDecoder()
-        decoder.decode(WeatherData.self, from: weat)
+        do {
+            let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
+            print(decodedData)
+        } catch {
+            print(error)
+        }
     }
     
 }
