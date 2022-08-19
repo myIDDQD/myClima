@@ -1,9 +1,14 @@
 
 import Foundation
 
+protocol WeatherManagerDelegate {
+    func didUpdateWeather(weather: WeatherModel)
+}
+
 struct WeatherManager {
     
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=af647f4d92b20f6d9991e96ab6122fa7&units=metric"
+    let delegate: WeatherManagerDelegate?
     
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)"
@@ -11,13 +16,13 @@ struct WeatherManager {
     }
     
     func performRequest(urlString: String) {
-        // create URL
+        //1. create URL
         
         if let url = URL(string: urlString) {
-            // create URLsession
+            //2. create URLsession
             let session = URLSession(configuration: .default)
             
-            // give the session task
+            //3. give the session task
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     print(error!)
@@ -25,14 +30,17 @@ struct WeatherManager {
                 }
                 
                 if let safeData = data {
-                    self.parseJSON(weatherData: safeData)
+                    if let weather = self.parseJSON(weatherData: safeData) {
+                        self.delegate?.didUpdateWeather(weather: weather)
+                    }
                 }
             }
+            //4. start the task
             task.resume()
         }
     }
     
-    func parseJSON(weatherData: Data) {
+    func parseJSON(weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
@@ -43,10 +51,11 @@ struct WeatherManager {
             
             let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
             
-            print(weather.conditionName)
-            print(weather.temperatureString)
+            return weather
+            
         } catch {
             print(error)
+            return nil
         }
     }  
 }
